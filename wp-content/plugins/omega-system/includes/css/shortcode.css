@@ -1,0 +1,68 @@
+/* @override
+	https://template.omegatemplate-v20.local/wp-content/plugins/omega-year/includes/css/shortcode.css?*
+	https://libertyhealthcare.hrbenefits.local/wp-content/plugins/omega-year/includes/css/shortcode.css?* */
+
+/* Omega System color variables
+var( --OMEGA-elementor-primary )
+var( --OMEGA-elementor-secondary )
+var( --OMEGA-elementor-text )
+var( --OMEGA-elementor-accent )
+var( --OMEGA-overview-grid1 )
+var( --OMEGA-overview-grid2 )
+var( --OMEGA-overview-grid3 )
+var( --OMEGA-overview-grid4 )
+var( --OMEGA-btn-enroll-base )
+var( --OMEGA-btn-enroll-hover )
+var( --OMEGA-btn-overview-base )
+var( --OMEGA-btn-overview-hover )
+var( --OMEGA-btn-prevnext-base )
+var( --OMEGA-btn-prevnext-hover )
+var( --OMEGA-text-embed )
+var( --OMEGA-text-sidebar )
+*/
+
+
+/* FLIMP shortcode */
+.flimp-embed {
+	display: block;
+	width: 100%;
+	aspect-ratio: 16/9;
+}
+.flimp-embed .wrapper {
+	display: block;
+	width: 100%;
+	aspect-ratio: 16/9;
+	background: rgb(204,204,204);
+	background: linear-gradient(180deg, rgba(204,204,204,1) 0%, rgba(238,238,238,1) 100%);
+	background: url( "/wp-content/plugins/omega-system/includes/css/placeholder-flimp.png" ) center center no-repeat;
+	background-size: cover;	 
+}
+.flimp-embed iframe {
+	display: block;
+	width: 100%;
+	aspect-ratio: 16/9;
+}
+.flimp-embed h3 {
+	margin-top: .6em;
+	text-align: center;
+}
+
+/* PDF shortcode */
+#content .pdf-embed {
+	text-align: center;
+	margin-bottom: 1em;
+}
+#content .pdf-embed img {
+	border: 2px solid var( --OMEGA-elementor-secondary );
+	width: 230px;
+}
+#content .pdf-embed h5 {
+	margin-top: 1em;
+}
+#content .pdf-embed .doc-animation-grow {
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+#content .pdf-embed .doc-animation-grow:hover {
+  transform: scale(1.06);
+}

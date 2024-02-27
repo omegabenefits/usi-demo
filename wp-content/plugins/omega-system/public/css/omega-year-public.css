@@ -1,0 +1,519 @@
+/* @override 
+	https://template.omegatemplate-v20.local/wp-content/plugins/omega-system/public/css/omega-year-public.css?*
+	https://fftc.omegams10.local/wp-content/plugins/omega-system/public/css/omega-year-public.css?*
+*/
+
+
+/*
+Elementor Site color variables:
+var( --e-global-color-primary )
+var( --e-global-color-secondary )
+var( --e-global-color-text )
+var( --e-global-color-accent )
+*/
+
+/* Omega System color variables
+var( --OMEGA-elementor-primary )
+var( --OMEGA-elementor-secondary )
+var( --OMEGA-elementor-text )
+var( --OMEGA-elementor-accent )
+var( --OMEGA-overview-grid1 )
+var( --OMEGA-overview-grid2 )
+var( --OMEGA-overview-grid3 )
+var( --OMEGA-overview-grid4 )
+var( --OMEGA-btn-enroll-base )
+var( --OMEGA-btn-enroll-hover )
+var( --OMEGA-btn-overview-base )
+var( --OMEGA-btn-overview-hover )
+var( --OMEGA-btn-prevnext-base )
+var( --OMEGA-btn-prevnext-hover )
+var( --OMEGA-text-link )
+var( --OMEGA-text-hover )
+var( --OMEGA-text-embed )
+var( --OMEGA-text-sidebar )
+var( --OMEGA-text-headline )
+var( --OMEGA-ninjatable-header )
+var( --OMEGA-ninjatable-hover )
+var( --OMEGA-ninjatable-subheader )
+var( --OMEGA-ninjatable-leftcol )
+var( --OMEGA-nav-link-base )
+var( --OMEGA-nav-link-hover )
+var( --OMEGA-nav-link-active )
+var( --OMEGA-bkg-header )
+var( --OMEGA-bkg-footer )
+var( --OMEGA-bkg-topbar )
+var( --OMEGA-bkg-daterange )
+*/
+
+/* ADMIN BAR OMEGA NAV */
+
+#wp-admin-bar-omega-system > .ab-item:before {
+	font: normal 20px/1 dashicons;
+	content: "\f197";
+	top: 2px;
+}
+#wpadminbar .quicklinks .menupop ul li {
+	float: left;
+	display: block;
+}
+#wp-admin-bar-omega-settings > .ab-item:before {
+	font: normal 20px/1 dashicons;
+	content: "\f108";
+}
+#wp-admin-bar-omega-colors > .ab-item:before {	
+	font: normal 20px/1 dashicons;
+	content: "\f533";
+}
+#wp-admin-bar-omega-pdf > .ab-item:before {
+	font: normal 20px/1 dashicons;
+	content: "\f497";
+}
+#wp-admin-bar-omega-flimpvideo > .ab-item:before {
+	font: normal 20px/1 dashicons;
+	content: "\f236";
+}
+#wp-admin-bar-omega-shortcodes > .ab-item:before {
+	font: normal 20px/1 dashicons;
+	content: "\f150";
+}
+#wp-admin-bar-omega-guide > .ab-item:before {
+	font: normal 20px/1 dashicons;
+	content: "\f348";
+}
+#wp-admin-bar-omega-advanced > .ab-item:before {
+	font: normal 20px/1 dashicons;
+	content: "\f11f";
+}
+
+
+/* GLOBAL LINKS */
+#main p a {
+	color: var( --OMEGA-text-link );
+	text-decoration: underline;
+}
+#main p a:hover {
+	color: var( --OMEGA-text-hover );
+}
+
+
+/* ALGOLIA SEARCH OVERRIDES */
+
+#main .searchform > input {
+	border-color: #aaa;
+}
+.algolia-autocomplete .aa-dropdown-menu {
+	background-color: #eee;
+	font-size: 14px;
+	/*width: 130%;*/
+}
+.algolia-autocomplete .aa-dropdown-menu .autocomplete-header {
+	background: #000;
+	color: #eee;
+	margin: 0;
+	padding: 0 14px;
+	line-height: 3em;
+	border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.algolia-autocomplete .aa-dropdown-menu a {
+	font-size: 14px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+	color: #174d8c;
+	color: var( --OMEGA-elementor-text );
+	background: rgba(143,187,237,.1);
+	font-style: normal;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .suggestion-post-title {
+	color: var( --OMEGA-elementor-text );
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .suggestion-post-content {
+	color: #888;
+	font-style: italic;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+
+/* HEADER TITLE YEAR BOX */
+#main .title_year {
+	position: relative;
+}
+#main .title_year .container {
+	position: relative;
+}
+#main .title_year .box {
+	z-index: 3;
+	border: 1px solid #eee;
+	min-width: 140px;
+	position: absolute;
+	right: 0;
+	top: 80px;
+	/*padding: 20px;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	background-color: rgba(0,0,0,.5);
+	transition: background-color 0.2s ease;
+}
+
+#main .title_year .box:has(a:hover) {
+	background-color: var( --OMEGA-btn-overview-hover );
+	transition: background-color 0.2s ease;
+}
+
+#main .title_year .year {
+	font-size: 38px;
+	line-height: 38px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 4px;
+	padding: 20px 20px 0 20px;
+}
+
+
+#main .title_year .box .year-info {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 18px;
+	color: #fff;
+	padding: 0 20px 20px 20px;
+}
+
+#year-date-range {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: rgba(0, 0, 0, .6);
+	background-color: var( --OMEGA-bkg-daterange );
+	padding: 3px;
+}
+#year-date-range span {
+	font-weight: 700;
+}
+#main .benefits-overview-grid #year-date-range {
+	margin-bottom: 20px;
+}
+
+
+/* BENEFITS OVERVIEW SHORTCODE */
+#main .benefits-overview-grid {
+	text-align: center;
+	margin: 1em 0 2em 0;
+}
+
+#main .benefits-overview-list {
+	margin: 1.2em 0;
+	padding: 0 10px;
+}
+
+#main .benefits-overview-error h2 {
+	background-color: var( --OMEGA-elementor-accent );
+	padding: 10px;
+	text-align: center;
+	font-style: italic;
+	color: #ffffff;
+}
+
+#main .benefits-overview-grid h2,
+#main .benefits-overview-list h2 {
+	font-size: 25px;
+	margin-bottom: 1em;
+}
+
+#main .benefits-overview-list ul li {
+	font-weight: 500;
+	font-size: 1.2em;
+}
+
+
+#main .benefits-overview-grid ul {
+	margin: 0;
+	display: grid;
+	gap: 1.5em;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	list-style-type: none;
+}
+#main .benefits-overview-grid ul > * {
+	border: 1px solid var( --OMEGA-elementor-text );
+	min-height: 180px;
+	/*position: relative;*/
+	overflow: hidden;
+}
+
+/* #main .benefits-overview-grid li { background-color: var( --OMEGA-overview-grid1 ); } */
+#main .benefits-overview-grid li:nth-of-type(4n+1) { background-color: var( --OMEGA-overview-grid1 ); }
+#main .benefits-overview-grid li:nth-of-type(4n+2) { background-color: var( --OMEGA-overview-grid2 ); }
+#main .benefits-overview-grid li:nth-of-type(4n+3) { background-color: var( --OMEGA-overview-grid3 ); }
+#main .benefits-overview-grid li:nth-of-type(4n+4) { background-color: var( --OMEGA-overview-grid4 ); }
+
+#main .benefits-overview-grid li .overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: .8;
+	transition: all .3s;
+}
+
+/* #main .benefits-overview-grid li .overlay { background-color: var( --OMEGA-overview-grid1 ); } */
+#main .benefits-overview-grid li:nth-of-type(4n+1) .overlay { background-color: var( --OMEGA-overview-grid1 ); }
+#main .benefits-overview-grid li:nth-of-type(4n+2) .overlay { background-color: var( --OMEGA-overview-grid2 ); }
+#main .benefits-overview-grid li:nth-of-type(4n+3) .overlay { background-color: var( --OMEGA-overview-grid3 ); }
+#main .benefits-overview-grid li:nth-of-type(4n+4) .overlay { background-color: var( --OMEGA-overview-grid4 ); }
+
+#main .benefits-overview-grid a {
+	display: block;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+#main .benefits-overview-grid a:hover {
+	transform: scale(1.12);
+}
+#main .benefits-overview-grid a:hover img {
+	transform: scale(.9);
+}
+#main .benefits-overview-grid a:hover .overlay {
+	opacity: 0.5;
+}
+#main .benefits-overview-grid img {
+	position: absolute;
+	display: block;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	transition: all .3s;
+	transform: scale(1.12);
+}
+#main .benefits-overview-grid h5 {
+	width: 100%;
+	padding: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	font-size: 1.4em;
+	line-height: 1.1em;
+/*	-webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;*/
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	/*display: flex;
+	align-items: center;
+	justify-content: center;*/
+}
+
+/* override the oceanwp page header overlay with a horizontal black gradient for better legibility of the title above the photo backgrounds */
+/* (set_theme_mod and filters only allow us to pass a background-color, not the full background element for linear-gradient) */
+#main .background-image-page-header-overlay {
+	opacity: 1.0; 
+	background: linear-gradient(90deg, rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.1) 100%);
+}
+
+#main .elementor-background-overlay {
+/*	background-color: var( --OMEGA-bkg-callout );
+	opacity: 1;*/
+}
+
+
+
+#content .prevnext {
+	margin: 2em 0;
+}
+
+#content .prevnext a {
+	display: block;
+	background-color: var( --OMEGA-btn-prevnext-base );
+	color: #fff;
+	padding: 10px 16px;
+	border-radius: 6px;
+	font-weight: 700;
+}
+
+#content .prevnext a:hover {
+	background-color: var( --OMEGA-btn-prevnext-hover );
+}
+#content .prevnext .prefix {
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-right: 6px;
+}
+#content .prevnext .alignleft .dashicons {
+	margin-right: 8px;
+	line-height: 1.2em;
+}
+#content .prevnext .alignright .dashicons,
+#content .prevnext .aligncenter .dashicons {
+	margin-left: 8px;
+	line-height: 1.2em;
+}
+#content .prevnext .aligncenter {
+	max-width: 50%;
+}
+#content .prevnext:has(.aligncenter) {
+	margin-top: 4em;
+}
+
+#top-bar {
+	background-color: var( --OMEGA-bkg-topbar );
+	position: relative;
+	border-bottom: none;
+	z-index: 101;
+}
+#top-bar-content {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 12px;
+}
+
+
+#main .enrollnow {
+	display: block;
+	min-width: 200px;
+	max-width: 300px;
+	text-align: center;
+}
+
+#main .enrollnow a {
+	background-color: var( --OMEGA-btn-enroll-base );
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 8px;
+	padding: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 17px;
+	line-height: 17px;
+}
+#main .enrollnow svg {
+	fill: #fff;
+	width: 24px;
+	height: 24px;
+}
+#main .enrollnow span {
+	margin-left: 5px;
+}
+#main .enrollnow a:hover {
+	background-color: var( --OMEGA-btn-enroll-hover );
+	transition: .2s;
+}
+
+
+#sitemap ul.sitemap-list {
+	line-height: 2em;
+	margin-left: 0;
+}
+#sitemap li.page_item_has_children {
+	font-weight: 700;
+	margin-top: 1em;
+	list-style: none;
+}
+#sitemap ul.children {
+	font-weight: normal;
+	list-style-type: square;
+}
+
+
+#omega-footer {
+	background-color: var( --OMEGA-bkg-footer );
+	color: rgba(255, 255, 255, .65);
+	text-align: center;
+	margin-top: 3em;
+	h5 {
+		padding-top: 3em;
+		text-transform: uppercase;
+		color: rgba(255, 255, 255, .65);
+	}
+	.disclaimer {
+		font-weight: 300;
+		margin-bottom: 3em;
+	}
+	.footer-bottom {
+		font-weight: 500;
+		padding: 16px;
+		background-color: #000;
+		color: #888;
+		span {
+			display: block;
+		}
+		a {
+			font-weight: 700;
+		}
+		a:hover {
+			color: #26a2af;
+		}
+	}
+	a {
+		color: rgba(255, 255, 255, .3);
+	}
+}
+
+
+@media screen and (width <= 1023px) {
+	#main .benefits-overview-grid ul {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	#main .benefits-overview-grid ul > * {
+		/*min-height: 180px;*/
+	}
+}
+
+
+@media screen and (width <= 767px) {
+	#main .benefits-overview-grid ul {
+		grid-template-columns: 1fr 1fr;
+	}
+	#main .benefits-overview-grid ul > * {
+		min-height: 150px;
+	}
+		#main .title_year .box {
+		right: -20px;
+		top: 100px;
+	}
+	#main .title_year .box {
+		width: 100px;
+	}
+	#main .title_year .box a {
+		padding: .4em;
+		font-size: 28px;
+	}
+		
+	#main .title_year .box span {
+		font-size: .4em;
+	}
+	
+	#content .prevnext .alignleft,
+	#content .prevnext .alignright {
+		width: 100%;
+		margin: 16px 0;
+		float: none;
+		text-align: center;
+	}
+	#content .prevnext .aligncenter {
+		max-width: 100%;
+	}
+}
+
+@media screen and (width <= 500px) {
+	#main .benefits-overview-grid ul {
+		grid-template-columns: 1fr;
+	}
+	#main .benefits-overview-grid ul > * {
+		min-height: 100px;
+	}	
+}

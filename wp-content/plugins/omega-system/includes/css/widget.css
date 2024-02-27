@@ -1,0 +1,80 @@
+/* @override
+	https://template.omegatemplate-v20.local/wp-content/plugins/omega-year/includes/css/widget.css?* */
+
+/***************************************************
+	styling for sidebar widgets
+***************************************************/
+
+
+/* Omega System color variables
+var( --OMEGA-elementor-primary )
+var( --OMEGA-elementor-secondary )
+var( --OMEGA-elementor-text )
+var( --OMEGA-elementor-accent )
+var( --OMEGA-overview-grid1 )
+var( --OMEGA-overview-grid2 )
+var( --OMEGA-overview-grid3 )
+var( --OMEGA-overview-grid4 )
+var( --OMEGA-btn-enroll-base )
+var( --OMEGA-btn-enroll-hover )
+var( --OMEGA-btn-overview-base )
+var( --OMEGA-btn-overview-hover )
+var( --OMEGA-btn-prevnext-base )
+var( --OMEGA-btn-prevnext-hover )
+var( --OMEGA-text-embed )
+var( --OMEGA-text-sidebar )
+*/
+
+/*.widget-title{display:block;line-height:1;font-size:13px;font-weight:400;color:#333;border-width:0 0 0 3px;border-style:solid;border-color:#13aff0;letter-spacing:1px;padding-left:15px;margin:0 0 20px;text-transform:capitalize}*/
+
+#main .sidebar-box {
+	margin-bottom: 24px;
+}
+
+#main .overview-button-widget {
+
+}
+#main .overview-button-widget ul li a {
+	display: block;
+	background-color: #000;
+	background-color: var( --OMEGA-btn-overview-base );
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 500;
+	font-size: 13px;
+	letter-spacing: 0;
+	padding: 10px;
+	border-radius: 8px;
+}
+#main .overview-button-widget ul li span {
+	font-weight: 700;
+
+}
+#main .overview-button-widget ul li a:hover {
+	background-color: #000;
+	background-color: var( --OMEGA-btn-overview-hover );
+	transition: 0.2s;
+}
+
+#main .format-print a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: var( --OMEGA-elementor-primary );
+	border-radius: 8px;
+	padding: 12px;
+}
+#main .format-print a:hover {
+	background-color: var( --OMEGA-elementor-accent );
+}
+
+#main .format-print h4 {
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 13px;
+	margin: 0;
+}
