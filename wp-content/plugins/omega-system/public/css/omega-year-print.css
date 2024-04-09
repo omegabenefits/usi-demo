@@ -1,5 +1,6 @@
 /* @override 
-	https://template.omegatemplate-v20.local/wp-content/plugins/omega-system/public/css/omega-year-print.css?* */
+	https://template.omegatemplate-v20.local/wp-content/plugins/omega-system/public/css/omega-year-print.css?*
+	https://usi-demo.omegastaging.local/wp-content/plugins/omega-system/public/css/omega-year-print.css?* */
 
 /*
 Elementor Site color variables:
@@ -124,6 +125,15 @@ section.elementor-section,
 }
 #site-logo .custom-logo {
 
+}
+
+/* Accordion widget */
+.elementor-accordion-title {
+	font-style: italic;
+}
+.elementor-accordion-icon-closed svg,
+.elementor-accordion-icon-opened svg {
+	display: none;
 }
 
 /*NINJATABLES*/

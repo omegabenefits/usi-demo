@@ -84,7 +84,11 @@ var( --OMEGA-bkg-daterange )
 	font: normal 20px/1 dashicons;
 	content: "\f11f";
 }
-
+#wp-admin-bar-export-static > .ab-item:before {
+	font: normal 20px/1 dashicons;
+	content: "\f13b";
+	top: 2px;
+}
 
 /* GLOBAL LINKS */
 #main p a {
@@ -326,6 +330,12 @@ var( --OMEGA-bkg-daterange )
 	opacity: 1;*/
 }
 
+/* override oceanwp behavior of fading header logo on hover */
+#site-logo #site-logo-inner a:hover img {
+	-moz-opacity: 1;
+	-webkit-opacity: 1;
+	opacity: 1 !important;
+}
 
 
 #content .prevnext {
