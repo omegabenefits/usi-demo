@@ -45,50 +45,6 @@ var( --OMEGA-bkg-topbar )
 var( --OMEGA-bkg-daterange )
 */
 
-/* ADMIN BAR OMEGA NAV */
-
-#wp-admin-bar-omega-system > .ab-item:before {
-	font: normal 20px/1 dashicons;
-	content: "\f197";
-	top: 2px;
-}
-#wpadminbar .quicklinks .menupop ul li {
-	float: left;
-	display: block;
-}
-#wp-admin-bar-omega-settings > .ab-item:before {
-	font: normal 20px/1 dashicons;
-	content: "\f108";
-}
-#wp-admin-bar-omega-colors > .ab-item:before {	
-	font: normal 20px/1 dashicons;
-	content: "\f533";
-}
-#wp-admin-bar-omega-pdf > .ab-item:before {
-	font: normal 20px/1 dashicons;
-	content: "\f497";
-}
-#wp-admin-bar-omega-flimpvideo > .ab-item:before {
-	font: normal 20px/1 dashicons;
-	content: "\f236";
-}
-#wp-admin-bar-omega-shortcodes > .ab-item:before {
-	font: normal 20px/1 dashicons;
-	content: "\f150";
-}
-#wp-admin-bar-omega-guide > .ab-item:before {
-	font: normal 20px/1 dashicons;
-	content: "\f348";
-}
-#wp-admin-bar-omega-advanced > .ab-item:before {
-	font: normal 20px/1 dashicons;
-	content: "\f11f";
-}
-#wp-admin-bar-export-static > .ab-item:before {
-	font: normal 20px/1 dashicons;
-	content: "\f13b";
-	top: 2px;
-}
 
 /* GLOBAL LINKS */
 #main p a {
