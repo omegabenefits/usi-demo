@@ -1,0 +1,157 @@
+/* @override 
+	https://template.omegatemplate-v20.local/wp-content/plugins/omega-system/public/css/omega-system-print.css?*
+	https://usi-demo.omegastaging.local/wp-content/plugins/omega-system/public/css/omega-system-print.css?* */
+
+/*
+Elementor Site color variables:
+var( --e-global-color-primary )
+var( --e-global-color-secondary )
+var( --e-global-color-text )
+var( --e-global-color-accent )
+*/
+
+@page {
+	margin: .5in;
+	counter-increment: page;
+	counter-reset: page 1;
+}
+
+body {
+	padding: 14px;
+	background-color: white;
+	font-size: 10pt;
+}
+
+
+/* show URL after links */
+/*a[href]:after {
+	content: " (" attr(href) ")";
+}*/
+
+a[href^="#"]:after,
+a[href^="javascript"]:after {
+		content: "";
+}
+
+body,
+main p,
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6,
+.elementor-container a,
+.elementor-container p,
+.elementor-container span {
+	color: #000 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	page-break-after:avoid;
+	page-break-inside:avoid
+}
+
+img {
+	page-break-inside:avoid;
+	page-break-after:avoid;
+}
+
+ul, ol, dl {
+	page-break-before:avoid
+}
+section {
+	background: none
+}
+
+#year-date-range {
+	margin: 1em 0;
+}
+
+
+
+/* HIDING */
+
+iframe,
+#mobile-nav,
+.mobile-right,
+#site-navigation,
+.a11y-toolbar,
+.title_year,
+.benefits-overview-grid,
+#searchform,
+.searchform,
+#top-bar-content,
+.screen-reader-text,
+.flimp-embed,
+.prevnext,
+.enrollnow,
+.pdf-embed,
+#right-sidebar,
+#sidr,
+#sidr-close,
+#scroll-top,
+.elementor-widget-image,
+.elementor-widget-image + .elementor-widget-heading,
+.footer-bottom
+{
+	display: none !important;
+}
+
+#main header {
+	background: none !important;
+	height: auto;
+}
+#footer #footer-widgets {
+	background: white !important;
+}
+
+#content-wrap,
+#primary,
+section.elementor-section,
+#main .ninja-table-wrapper {
+	width: 100% !important;
+	
+}
+#main .footable {
+	font-size: 9pt !important;
+}
+
+#site-header-inner.container {
+	padding: 0;
+	max-height: 90px;
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+#site-logo .custom-logo {
+
+}
+
+/* Accordion widget */
+.elementor-accordion-title {
+	font-style: italic;
+}
+.elementor-accordion-icon-closed svg,
+.elementor-accordion-icon-opened svg {
+	display: none;
+}
+
+/*NINJATABLES*/
+#main .semantic_ui thead tr th {
+	background-color: #888 !important;
+	color: #fff;
+}
+#main .semantic_ui tr:first-child td {
+	background-color: #444 !important;
+	color: #fff;
+}
+#main .semantic_ui td:first-child,
+#main .footable .footable-first-visible {
+	border-color: #ddd !important;
+}
+
+#year-date-range {
+	font-style: italic;
+	color: #000;
+}

@@ -1,0 +1,702 @@
+/*
+Elementor Site color variables:
+var( --e-global-color-primary )
+var( --e-global-color-secondary )
+var( --e-global-color-text )
+var( --e-global-color-accent )
+*/
+
+/* Omega System color variables
+var( --OMEGA-elementor-primary )
+var( --OMEGA-elementor-secondary )
+var( --OMEGA-elementor-text )
+var( --OMEGA-elementor-accent )
+var( --OMEGA-grid-columns )
+var( --OMEGA-overview-grid1 )
+var( --OMEGA-overview-grid2 )
+var( --OMEGA-overview-grid3 )
+var( --OMEGA-overview-grid4 )
+var( --OMEGA-btn-enroll-base )
+var( --OMEGA-btn-enroll-hover )
+var( --OMEGA-btn-overview-base )
+var( --OMEGA-btn-overview-hover )
+var( --OMEGA-btn-prevnext-base )
+var( --OMEGA-btn-prevnext-hover )
+var( --OMEGA-text-link )
+var( --OMEGA-text-hover )
+var( --OMEGA-text-embed )
+var( --OMEGA-text-sidebar )
+var( --OMEGA-text-headline )
+var( --OMEGA-text-subhead )
+var( --OMEGA-text-divider )
+var( --OMEGA-ninjatable-header )
+var( --OMEGA-ninjatable-hover )
+var( --OMEGA-ninjatable-subheader )
+var( --OMEGA-ninjatable-leftcol )
+var( --OMEGA-nav-link-base )
+var( --OMEGA-nav-link-hover )
+var( --OMEGA-bkg-header )
+var( --OMEGA-bkg-footer )
+var( --OMEGA-bkg-topbar )
+var( --OMEGA-bkg-daterange )
+*/
+
+/* @group GLOBAL LINKS */
+#main p a {
+	color: var( --OMEGA-text-link );
+	text-decoration: underline;
+}
+#main p a:hover {
+	color: var( --OMEGA-text-hover );
+}
+/* @end */
+
+
+/* @group ALGOLIA SEARCH OVERRIDES */
+
+#main .searchform > input {
+	border-color: #aaa;
+}
+
+.algolia-autocomplete .aa-dropdown-menu {
+	background-color: #eee;
+	font-size: 14px;
+	margin-top: 16px;
+	box-shadow: 0 20px 50px #656565;
+}
+.algolia-autocomplete #algolia-autocomplete-listbox-0,
+.algolia-autocomplete #algolia-autocomplete-listbox-1,
+.algolia-autocomplete #algolia-autocomplete-listbox-2 {
+	margin-left: -240px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .autocomplete-header {
+	background: var( --OMEGA-elementor-primary );
+	color: #eee;
+	margin: 0;
+	padding: 0 14px;
+	line-height: 3em;
+	border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.algolia-autocomplete .aa-dropdown-menu a {
+	font-size: 14px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+	color: #174d8c;
+	color: var( --OMEGA-elementor-text );
+	background: rgba(143,187,237,.1);
+	font-style: normal;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .suggestion-post-title {
+	color: var( --OMEGA-elementor-text );
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .suggestion-post-content {
+	color: #888;
+	font-style: italic;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+/* @end */
+
+
+/* @group HEADER TITLE YEAR BOX */
+#main .title_year {
+	position: relative;
+}
+#main .title_year .container {
+	position: relative;
+}
+#main .title_year .box {
+	z-index: 3;
+	border: 1px solid #eee;
+	min-width: 140px;
+	position: absolute;
+	right: 0;
+	top: 80px;
+	/*padding: 20px;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	background-color: rgba(0,0,0,.5);
+	transition: background-color 0.2s ease;
+}
+
+#main .title_year .box:has(a:hover) {
+	background-color: var( --OMEGA-btn-overview-hover );
+	transition: background-color 0.2s ease;
+}
+
+#main .title_year .year {
+	font-size: 38px;
+	line-height: 38px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 4px;
+	padding: 20px 20px 0 20px;
+}
+
+
+#main .title_year .box .year-info {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 18px;
+	color: #fff;
+	padding: 0 20px 20px 20px;
+}
+/* @end */
+
+
+/* @group OVERVIEW / TILE GRID SHORTCODE */
+#main .benefits-overview-grid,
+#main .tile-grid-container {
+	text-align: center;
+	margin: 0 0 0 0;
+}
+
+#main .benefits-overview-error h2,
+#main .tile-grid-error h2 {
+	background-color: var( --OMEGA-elementor-accent );
+	padding: 10px;
+	text-align: center;
+	font-style: italic;
+	color: #ffffff;
+}
+
+#main .benefits-overview-grid h2,
+#main .tile-grid-container h2 {
+	font-size: 25px;
+	font-weight: 700;
+	display: inline-block;
+	margin: 0 auto 2rem auto;
+	color: var( --OMEGA-text-headline );
+/*	border-top: 3px solid rgb( from var( --OMEGA-elementor-accent ) r g b / 0.5 );*/
+}
+
+#main .benefits-overview-grid .grid-col-headers h3,
+#main .tile-grid .tile-grid-col h3 {
+	border-bottom: 3px solid;
+	border-color: rgb(from var( --OMEGA-elementor-accent) r g b / 0.5);
+	font-size: 1.6em;
+	padding-bottom: .5em;
+	margin: 2rem 0 3rem 0;
+	color:  var( --OMEGA-elementor-text );
+}
+
+#main .tile-grid {
+	margin: 0;
+	display: grid;
+	gap: 2rem;
+}
+
+#main .tile-grid ul li {
+	position: relative;
+}
+
+#main .benefits-overview-grid ul,
+#main .benefits-overview-grid .grid-col-headers,
+#main .tile-grid ul {
+	margin: 0;
+	display: grid;
+	gap: 2rem;
+	list-style-type: none;
+}
+
+#main .benefits-overview-grid ul,
+#main .benefits-overview-grid .grid-col-headers,
+#main .tile-grid.flow-cols,
+#main .tile-grid.flow-rows ul {
+	grid-template-columns: repeat( var( --OMEGA-grid-columns ), 1fr);
+}
+
+#main .benefits-overview-grid ul > li,
+#main .tile-grid ul > li {
+	border: 1px solid rgb( from var( --OMEGA-elementor-text ) r g b / 0.4);
+	min-height: 180px;
+	overflow: hidden;
+}
+
+/* #main .benefits-overview-grid li { background-color: var( --OMEGA-overview-grid1 ); } */
+/* OUTPUT INLINE NOW!
+>> class-omega-shortcode.php #206 */
+/*
+#main .tile-grid li:nth-of-type(4n+1) { background-color: var( --OMEGA-overview-grid1 ); }
+#main .tile-grid li:nth-of-type(4n+2) { background-color: var( --OMEGA-overview-grid2 ); }
+#main .tile-grid li:nth-of-type(4n+3) { background-color: var( --OMEGA-overview-grid3 ); }
+#main .tile-grid li:nth-of-type(4n+4) { background-color: var( --OMEGA-overview-grid4 ); }*/
+
+
+#main .benefits-overview-grid li .overlay,
+#main .tile-grid li .overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: .85;
+	transition: all .3s;
+}
+
+/* #main .benefits-overview-grid li .overlay { background-color: var( --OMEGA-overview-grid1 ); } */
+/* OUTPUT INLINE NOW!
+>> class-omega-shortcode.php #212 */
+
+/*#main .tile-grid li:nth-of-type(4n+1) .overlay { background-color: var( --OMEGA-overview-grid1 ); }
+#main .tile-grid li:nth-of-type(4n+2) .overlay { background-color: var( --OMEGA-overview-grid2 ); }
+#main .tile-grid li:nth-of-type(4n+3) .overlay { background-color: var( --OMEGA-overview-grid3 ); }
+#main .tile-grid li:nth-of-type(4n+4) .overlay { background-color: var( --OMEGA-overview-grid4 ); }*/
+
+
+#main .benefits-overview-grid a,
+#main .tile-grid a {
+	display: block;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+#main .benefits-overview-grid a:hover,
+#main .tile-grid a:hover {
+	transform: scale(1.12);
+}
+#main .benefits-overview-grid a:hover img,
+#main .tile-grid a:hover img {
+	transform: scale(.9);
+}
+#main .benefits-overview-grid a:hover .overlay,
+#main .tile-grid a:hover .overlay {
+	opacity: 0.5;
+}
+#main .benefits-overview-grid img,
+#main .tile-grid ul li img {
+	position: absolute;
+	display: block;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	transition: all .3s;
+	transform: scale(1.12);
+}
+#main .benefits-overview-grid h5,
+#main .tile-grid h5 {
+	width: 100%;
+	padding: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 1.2em;
+/*	-webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;*/
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	/*display: flex;
+	align-items: center;
+	justify-content: center;*/
+}
+
+#year-date-range {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: rgba(0, 0, 0, .6);
+	background-color: var( --OMEGA-bkg-daterange );
+	padding: 3px;
+}
+#year-date-range span {
+	font-weight: 700;
+}
+#main .tile-grid-container #year-date-range,
+#main .benefits-overview-grid #year-date-range {
+	margin-bottom: 20px;	
+}
+/* @end */
+
+
+
+
+
+
+/* @group OCEANWP OVERRIDES */
+
+#main h1.page-header-title {
+	font-weight: 600;
+	font-size: 46px;
+	text-align: left;
+}
+
+/* override the oceanwp page header overlay with a horizontal black gradient for better legibility of the title above the photo backgrounds */
+/* (set_theme_mod and filters only allow us to pass a background-color, not the full background element for linear-gradient) */
+#main .background-image-page-header-overlay {
+	opacity: 1.0; 
+	background: linear-gradient(90deg, rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.1) 100%);
+}
+
+#main .elementor-background-overlay {
+/*	background-color: var( --OMEGA-bkg-callout );
+	opacity: 1;*/
+}
+#site-navigation .site-search-toggle i.icon-magnifier {
+	font-weight: 700;
+	color: #fff;
+	background-color: rgb(from var( --OMEGA-nav-link-base ) r g b / .5 );
+	padding: 1rem;
+	transition: all .2s;
+}
+#site-navigation .site-search-toggle i.icon-magnifier:hover {
+	background-color: rgb(from var( --OMEGA-nav-link-base ) r g b / 1 );
+	transition: all .2s;
+}
+/*#site-navigation .site-search-toggle i.icon-magnifier::after {
+	content: "Search";
+	position: relative;
+	top: -.1rem;
+	margin-left: .4rem;
+	text-transform: uppercase;
+	font-family: var( --e-global-typography-primary-font-family ), sans-serif;
+}*/
+#searchform-header-replace .header-searchform .aa-input {
+	color: var( --OMEGA-elementor-text );
+}
+#site-navigation li.menu-header > a.menu-link {
+	cursor: pointer;
+/*	pointer-events: none;
+	-webkit-user-select: none;
+	user-select: none;*/
+}
+
+/* override oceanwp behavior of fading header logo on hover */
+#site-logo #site-logo-inner a:hover img {
+	-moz-opacity: 1;
+	-webkit-opacity: 1;
+	opacity: 1 !important;
+}
+
+#main .elementor-widget-container,
+#main .elementor-top-section {
+	padding-left: 0;
+	padding-right: 0;
+}
+#main .elementor-widget-container p {
+	text-align: left;
+}
+
+/* @end */
+
+/* @group PREV NEXT BTN */
+
+#content .prevnext {
+	margin: 2em 0;
+}
+
+#content .prevnext a {
+	display: block;
+	background-color: var( --OMEGA-btn-prevnext-base );
+	color: #fff;
+	padding: 10px 16px;
+	border-radius: 6px;
+	font-weight: 700;
+}
+
+#content .prevnext a:hover {
+	background-color: var( --OMEGA-btn-prevnext-hover );
+}
+#content .prevnext .prefix {
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-right: 6px;
+}
+#content .prevnext .alignleft .dashicons {
+	margin-right: 8px;
+	line-height: 1.2em;
+}
+#content .prevnext .alignright .dashicons,
+#content .prevnext .aligncenter .dashicons {
+	margin-left: 8px;
+	line-height: 1.2em;
+}
+#content .prevnext .aligncenter {
+	max-width: 50%;
+}
+#content .prevnext:has(.aligncenter) {
+	margin-top: 4em;
+}
+/* @end */
+
+/* @group TOP BAR */
+#top-bar {
+	background-color: var( --OMEGA-bkg-topbar );
+	position: relative;
+	border-bottom: none;
+	z-index: 101;
+}
+#top-bar-content {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 12px;
+}
+/* @end */
+
+/* @group ENROLL BUTTON */
+#main .enrollnow {
+	display: block;
+	min-width: 200px;
+	max-width: 300px;
+	text-align: center;
+}
+
+#main .enrollnow a {
+	background-color: var( --OMEGA-btn-enroll-base );
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 8px;
+	padding: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 17px;
+	line-height: 17px;
+}
+#main .enrollnow svg {
+	fill: #fff;
+	width: 24px;
+	height: 24px;
+}
+#main .enrollnow span {
+	margin-left: 5px;
+}
+#main .enrollnow a:hover {
+	background-color: var( --OMEGA-btn-enroll-hover );
+	transition: .2s;
+}
+/* @end */
+
+/* @group SITEMAP */
+#sitemap ul.sitemap-list {
+	line-height: 2em;
+	margin-left: 0;
+}
+#sitemap li.page_item_has_children {
+	font-weight: 700;
+	margin-top: 1em;
+	list-style: none;
+}
+#sitemap ul.children {
+	font-weight: normal;
+	list-style-type: square;
+}
+/* @end */
+
+/* @group SIDEBAR MENU LIST WIDGET */
+.widget-area .sidebar-box .widget-title {
+	font-weight: 600;
+	font-size: 1.4rem;
+	line-height: 1.2;
+	margin-bottom: 18px;
+	color:  var( --OMEGA-text-sidebar );
+	border-color: var( --OMEGA-text-link );
+}
+.widget-area .sidebar-menu-widget h4:not(:first-of-type)  {
+	margin-top: 18px;
+}
+.widget-area .sidebar-menu-widget ul {
+	list-style: none;
+}
+.widget-area .sidebar-menu-widget li {
+	padding: 2px 0
+}
+.widget-area .sidebar-menu-widget li a {
+	display: inline-block;
+	position: relative;
+	font-size: 1.3rem;
+	font-weight: 500;
+	color: var( --OMEGA-elementor-text );
+}
+.widget-area .sidebar-menu-widget li a:before {
+	content: "";
+	display: inline-block;
+	color: #999;
+	font-size: 10px;
+	margin-right: 10px;
+	margin-top: -2px;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 400;
+	vertical-align: middle;
+	zoom: 1
+}
+.widget-area .sidebar-menu-widget li a:hover {
+	margin-left: -8px;
+	color: var( --OMEGA-text-hover );
+}
+.widget-area .sidebar-menu-widget li a:hover:before {
+	color: #222
+}
+
+.widget-area .sidebar-box h4.widget-title {
+	pointer-events: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+/* @end */
+
+/* @group FOOTER */
+#omega-footer {
+	background-color: var( --OMEGA-bkg-footer );
+	color: rgba(255, 255, 255, .65);
+	text-align: center;
+	margin-top: 3em;
+	h5 {
+		padding-top: 3em;
+		text-transform: uppercase;
+		color: rgba(255, 255, 255, .65);
+	}
+	.disclaimer {
+		font-weight: 300;
+		margin-bottom: 3em;
+	}
+	.footer-bottom {
+		font-weight: 500;
+		padding: 16px;
+		background-color: #000;
+		color: #888;
+		span {
+			display: block;
+		}
+		a {
+			font-weight: 700;
+		}
+		a:hover {
+			color: #26a2af;
+		}
+	}
+	a {
+		color: rgba(255, 255, 255, .3);
+	}
+}
+/* @end */
+
+@media screen and (width <= 1023px) {
+	#main .benefits-overview-grid ul,
+	#main .benefits-overview-grid .grid-col-headers,
+	#main .tile-grid.flow-cols,
+	#main .tile-grid.flow-rows ul {
+		grid-template-columns: repeat( 3, 1fr);
+	}	
+	
+	#main .benefits-overview-grid ul > * {
+		/*min-height: 180px;*/
+	}
+}
+
+
+@media screen and (width <= 767px) {
+	#main .benefits-overview-grid ul,
+	#main .benefits-overview-grid .grid-col-headers,
+	#main .tile-grid.flow-cols,
+	#main .tile-grid.flow-rows ul {
+		grid-template-columns: repeat( 2, 1fr);
+	}
+	#main .benefits-overview-grid ul > * {
+		min-height: 150px;
+	}
+	
+	
+	#main .title_year .box {
+		min-width: 100px;
+		right: -15px;
+		top: 50px;
+		padding: 10px;
+	}
+	
+	#main .title_year .year {
+		font-size: 20px;
+		line-height: 22px;
+		font-weight: 700;
+		color: #fff;
+		margin-bottom: 4px;
+		padding: 0;
+	}
+
+	#main .title_year .box .year-info {
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 12px;
+		color: #fff;
+		padding: 0;
+	}
+	
+	#content .prevnext .alignleft,
+	#content .prevnext .alignright {
+		width: 100%;
+		margin: 16px 0;
+		float: none;
+		text-align: center;
+	}
+	#content .prevnext .aligncenter {
+		max-width: 100%;
+	}
+	.algolia-autocomplete #algolia-autocomplete-listbox-0,
+	.algolia-autocomplete #algolia-autocomplete-listbox-1,
+	.algolia-autocomplete #algolia-autocomplete-listbox-2 {
+		margin-left: 0;
+	}
+}
+
+@media screen and (width <= 500px) {
+	html {
+		font-size: 100%;
+	}
+	#main p,
+	#main ul li {
+		font-size: .85em;
+	}
+	#main h2 {
+		font-size: 1.5em;
+	}
+	#main h3 {
+		font-size: 1.3em;
+	}
+
+	#main .container {
+		max-width: 94%;
+	}
+	#main .benefits-overview-grid ul,
+	#main .benefits-overview-grid .grid-col-headers,
+	#main .tile-grid.flow-cols,
+	#main .tile-grid.flow-rows ul {
+		grid-template-columns: repeat( 1, 1fr);
+	}
+	#main .benefits-overview-grid ul > *,
+	#main .tile-grid ul > li  {
+		min-height: 100px;
+	}
+		
+	#main .title_year .box {
+		min-width: 60px;
+		right: -12px;
+		top: 0px;
+		padding: 8px;
+	}
+	#main .title_year .year {
+		font-size: 18px;
+		line-height: 20px;
+		margin-bottom: 0;
+		padding: 0;
+	}
+
+	#main .title_year .box .year-info {
+		display: none;
+	}
+}
