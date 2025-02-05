@@ -1,3 +1,6 @@
+/* @override 
+	https://aerodyn.omegastaging.local/wp-content/plugins/omega-system/public/css/omega-system-public.css?* */
+
 /*
 Elementor Site color variables:
 var( --e-global-color-primary )
@@ -39,6 +42,10 @@ var( --OMEGA-bkg-header )
 var( --OMEGA-bkg-footer )
 var( --OMEGA-bkg-topbar )
 var( --OMEGA-bkg-daterange )
+*/
+
+/* Omega System layout variables
+var( --OMEGA-header—height )
 */
 
 /* @group GLOBAL LINKS */
@@ -328,11 +335,49 @@ var( --OMEGA-bkg-daterange )
 
 /* @group OCEANWP OVERRIDES */
 
+header#site-header {
+	padding: 10px 0 10px 0;
+	background-color: var( --OMEGA-bkg-header );
+	transition: box-shadow 0.2s;
+}
+
+header #site-logo #site-logo-inner,
+header .oceanwp-social-menu .social-menu-inner,
+header#site-header.full_screen-header .menu-bar-inner,
+header .after-header-content .after-header-content-inner {
+	height: 110px;
+}
+
+header #site-navigation-wrap .dropdown-menu >li >a,
+header .oceanwp-mobile-menu-icon a,
+header .mobile-menu-close,
+header .after-header-content-inner >a {
+	line-height: 110px;
+}
+
 #main h1.page-header-title {
 	font-weight: 600;
 	font-size: 46px;
 	text-align: left;
 }
+
+#main h2.elementor-heading-title {
+	font-size: 32px;
+	font-weight: 600;
+	letter-spacing: 0;
+}
+#main h3.elementor-heading-title {
+	font-size: 26px;
+	font-weight: 600;
+	letter-spacing: 0;
+}
+#main h4.elementor-heading-title {
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 0;
+	text-transform: uppercase;
+}
+
 
 /* override the oceanwp page header overlay with a horizontal black gradient for better legibility of the title above the photo backgrounds */
 /* (set_theme_mod and filters only allow us to pass a background-color, not the full background element for linear-gradient) */
@@ -600,8 +645,45 @@ var( --OMEGA-bkg-daterange )
 	}
 }
 
-
+/* mobile hamburger menu collapse width */
 @media screen and (width <= 767px) {
+		
+	header #site-logo #site-logo-inner,
+	header .oceanwp-social-menu .social-menu-inner,
+	header#site-header.full_screen-header .menu-bar-inner,
+	header .after-header-content .after-header-content-inner {
+		height: 60px;
+	}
+	
+	header #site-navigation-wrap .dropdown-menu >li >a,
+	header .oceanwp-mobile-menu-icon a,
+	header .mobile-menu-close,
+	header .after-header-content-inner >a {
+		line-height: 60px;
+	}
+	
+	#sidr .sidr-class-toggle-sidr-close {
+		line-height: 20px;
+		background-color: var( --OMEGA-elementor-primary );
+		color: #fff;
+		text-align: right;
+	}
+	#sidr .sidr-class-icon,
+	#side .sidr-class-close-text {
+		line-height: 20px;
+	}
+	
+	header #icon-searchform-dropdown {
+		top: 50px;
+		right: -5vw;
+		width: 100vw;
+		background-color: #eee;
+		box-shadow: 0 6px 6px rgba(0,0,0,.3);
+	}
+	header #icon-searchform-dropdown form {
+		background-color: #fff;
+	}
+
 	#main .benefits-overview-grid ul,
 	#main .benefits-overview-grid .grid-col-headers,
 	#main .tile-grid.flow-cols,
@@ -658,20 +740,29 @@ var( --OMEGA-bkg-daterange )
 	html {
 		font-size: 100%;
 	}
+
 	#main p,
 	#main ul li {
 		font-size: .85em;
-	}
-	#main h2 {
-		font-size: 1.5em;
-	}
-	#main h3 {
-		font-size: 1.3em;
 	}
 
 	#main .container {
 		max-width: 94%;
 	}
+	
+	#main h1.page-header-title {
+		font-size: 30px;
+	}	
+	#main h2.elementor-heading-title {
+		font-size: 24px;
+	}
+	#main h3.elementor-heading-title {
+		font-size: 20px;
+	}
+	#main h4.elementor-heading-title {
+		font-size: 18px;
+	}
+	
 	#main .benefits-overview-grid ul,
 	#main .benefits-overview-grid .grid-col-headers,
 	#main .tile-grid.flow-cols,
@@ -681,6 +772,10 @@ var( --OMEGA-bkg-daterange )
 	#main .benefits-overview-grid ul > *,
 	#main .tile-grid ul > li  {
 		min-height: 100px;
+	}
+	
+	#main .oew-search-wrap {
+		display: none;
 	}
 		
 	#main .title_year .box {
