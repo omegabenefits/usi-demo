@@ -25,6 +25,8 @@ var( --OMEGA-text-sidebar )
 	display: block;
 	width: 100%;
 	aspect-ratio: 16/9;
+	max-width: 640px;
+	margin: 0 auto;
 }
 
 .flimp-embed .wrapper {
