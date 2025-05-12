@@ -39,6 +39,37 @@
 		var menuFloat = $('#site-navigation-wrap').css('float');
 		$('#site-navigation-wrap .header-searchform input').css('text-align', menuFloat);
 
+		// 		// sticky offset compensation for anchors??
+		// 		window.addEventListener('elementor/frontend/init', function() {
+		// 		elementorFrontend.hooks.addFilter('frontend/handlers/menu_anchor/scroll_top_distance', function(scrollTop) {
+		// 			return scrollTop - 80;
+		// 		});
+		// 		});
+
+		// 		// Disable default click events on anchor links handled by Elementor
+		// 		jQuery(document).off('click', 'a[href*="#"]');
+		//
+		// 		// Add a new click event handler for anchor links
+		// 		jQuery('a[href*="#"]').on('click', function(e) {
+		// 			e.preventDefault(); // this breaks link functionality coming from any other page!
+		// 			var targetId = jQuery(this)
+		// 				.attr('href')
+		// 				.split('#')[1];
+		// 			var targetElement = document.getElementById(targetId);
+		// 			if (targetElement) {
+		// 				var topOffset = 120; // Adjust this based on the height of your sticky header
+		// 				var elementPosition = targetElement.getBoundingClientRect().top;
+		// 				var offsetPosition = elementPosition + window.pageYOffset - topOffset;
+		// 				window.scrollTo({
+		// 					top: offsetPosition,
+		// 					behavior: 'smooth',
+		// 				});
+		// 				console.log('anchor scroll sticky offset ' + topOffset);
+		// 			} else {
+		// 				console.log('no such anchor on this page!');
+		// 			}
+		// 		});
+
 		// end DOM ready
 	});
 })(jQuery);
