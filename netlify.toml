@@ -3,7 +3,7 @@
 [[headers]]
     for = "/*"
     [headers.values]
-        X-Frame-Options = "SAMEORIGIN"
+        #  X-Frame-Options = "SAMEORIGIN" # this prevents iframe embedding, but that is sometimes used by clients within intranet sites!
         #  Multi-value headers are expressed with multi-line strings
         cache-control = '''
             max-age=0,
