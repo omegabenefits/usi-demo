@@ -1,5 +1,6 @@
 /* @override 
-	https://aerodyn.omegastaging.local/wp-content/plugins/omega-system/public/css/omega-system-public.css?* */
+	https://aerodyn.omegastaging.local/wp-content/plugins/omega-system/public/css/omega-system-public.css?*
+	https://agcbio.omegastaging.local/wp-content/plugins/omega-system/public/css/omega-system-public.css?* */
 
 /*
 Elementor Site color variables:
@@ -630,6 +631,29 @@ header .after-header-content-inner >a {
 		color: rgba(255, 255, 255, .3);
 	}
 }
+/* @end */
+
+/* @group BROKENLINK */
+
+@keyframes brokenlink {
+  0%, 100% {
+	background-color: #fe32e6;
+  }
+  50% {
+	background-color: #ffffff;
+  }
+}
+
+#main a.brokenlink,
+#main img.brokenlink {
+	animation: brokenlink 2s infinite;
+	padding: 6px;
+	border-radius: 4px;
+}
+#main img.brokenlink {
+	display: block;
+}
+
 /* @end */
 
 @media screen and (width <= 1023px) {

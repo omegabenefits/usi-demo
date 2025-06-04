@@ -5,9 +5,15 @@
 	// When the window is loaded:
 
 	$(window).load(function() {
+		// if we have $_GET var for brokenlink, search for string in elements
+		if (typeof brokenlink !== 'undefined') {
+			console.log('brokenlink: ' + brokenlink);
+			$('a[href*="' + brokenlink + '"]').addClass('brokenlink');
+			$('img[src*="' + brokenlink + '"]').addClass('brokenlink');
+		}
+
 		// REPLACEMENT FOR OCEANWP STICKY HEADER PREMIUM PLUGIN
 		// (haven't dealt with avoiding conflict if the plugin is active, just works in its absence!)
-
 		window.addEventListener('scroll', onWindowScroll);
 		function onWindowScroll(event) {
 			if (window.pageYOffset > 3) {
